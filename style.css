@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: relative;
+    top: 390px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-family: Manrope;
+    font-size: 13px;
+    color: hsl(217, 19%, 31%);
+    letter-spacing: 0.03rem;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 500;
+    line-height: 1.4rem;
+}
+
+.avtar-name {
+    font-weight: 700;
+    color: hsl(217, 19%, 31%);
+}
+
+.avtar-image {
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.avtar-disc {
+    display: inline-block;
+    padding-left: 17px;
+    position: relative;
+    bottom: 10px;
+}
+
+.para-container {
+    background-color: white;
+    width: 47%;
+    padding: 20px;
+    padding-left: 60px;
+    text-align: left;
+    display: inline-block;
+    border-radius: 0 1rem 1rem 0;
+    box-shadow: 2px 6px 25px -9px grey;
+}
+
+.drawers-img {
+    width: 30%;
+    height: 332px;
+    position: relative;
+    top: 39px;
+    left: 3px;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 6px 25px -9px grey;
+}
+
+.main-container {
+    display: inline-block;
+    position: relative;
+    top: 180px;
+}
+
+.avtar-icon {
+    position: relative;
+    top: 5px;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    top: 50px;
+}
+
+/* The actual popup */
+
+.popuptext {
+    visibility: hidden;
+    width: 240px;
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(212, 23%, 69%);
+    text-align: center;
+    border-radius: 7px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 325%;
+    left: 110px;
+    margin-right: 900px;
+    padding: 13px 23px;
+}
+
+/* Popup arrow */
+
+.popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+
+.show {
+    visibility: visible;
+    animation: fadeIn 1s;
+}
+
+.pinterest {
+    padding-right: 15px;
+}
+
+.abc {
+    padding-right: 18px;
+    position: relative;
+    bottom: 3px;
+}
+
+.share-icon {
+    position: relative;
+    bottom: 60px;
+    left: 210px;
+    width: 40px;
+    background-color: hsl(210, 46%, 95%);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.share-icon:hover {
+    background-color: hsl(217, 19%, 35%);
+}
+
+@media only screen and (max-width: 1165px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+    .main-container {
+        width: 560px;
+        margin: 0 auto;
+    }
+    .drawers-img {
+        border-radius: 1rem 1rem 0 0;
+        position: relative;
+        top: 3px;
+        left: 0.06rem;
+    }
+    .para-container {
+        border-radius: 0 0 1rem 1rem;
+    }
+    p {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+    body {
+        font-size: 10px;
+        letter-spacing: normal;
+    }
+    .main-container {
+        width: 400px;
+        margin: 0 auto;
+    }
+    .share-icon {
+        position: relative;
+        left: 80px;
+    }
+    .para-container {
+        position: relative;
+        bottom: 55px;
+        padding-left: 30px;
+        padding-top: 25px;
+        padding-bottom: 17px;
+    }
+    p {
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .avtar-name {
+        font-weight: 700;
+        font-size: 15px;
+    }
+    .avtar-icon {
+        padding-top: 13px;
+    }
+    .popuptext {
+        visibility: hidden;
+        width: 401px;
+        background-color: hsl(217, 19%, 35%);
+        color: hsl(212, 23%, 69%);
+        text-align: left;
+        border-radius: 0 0 1rem 1rem;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 54%;
+        left: -231px;
+        margin-right: 600px;
+        padding: 35px 23px 35px 45px;
+    }
+    /* Popup arrow */
+    .popuptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border: none;
+        border-color: white transparent transparent transparent;
+    }
+    /* Toggle this class - hide and show the popup */
+    .show {
+        visibility: visible;
+        animation: fadeIn 1s;
+    }
+    .pinterest {
+        padding-right: 20px;
+    }
+    .abc {
+        padding-right: 20px;
+        position: relative;
+        bottom: 3px;
+        font-size: 15px;
+        letter-spacing: 0.4rem;
+    }
+    .share-icon {
+        position: relative;
+        bottom: 50px;
+        left: 80px;
+        width: 40px;
+        z-index: 2;
+        background-color: hsl(210, 46%, 95%);
+        padding: 10px;
+        border-radius: 50%;
+    }
+    
+    .share-icon:hover {
+        background-color: hsl(212, 23%, 69%);
+    }
+}
